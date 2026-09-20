@@ -113,8 +113,8 @@ export function Navbar() {
                 }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = "var(--white)")}
                 onMouseLeave={(e) =>
-                  (e.currentTarget.style.color =
-                    isHome && !location.hash ? "var(--primary)" : "var(--text-muted)")
+                (e.currentTarget.style.color =
+                  isHome && !location.hash ? "var(--primary)" : "var(--text-muted)")
                 }
               >
                 Accueil
@@ -195,8 +195,8 @@ export function Navbar() {
                 }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = "var(--white)")}
                 onMouseLeave={(e) =>
-                  (e.currentTarget.style.color =
-                    location.pathname === "/contact" ? "var(--primary)" : "var(--text-muted)")
+                (e.currentTarget.style.color =
+                  location.pathname === "/contact" ? "var(--primary)" : "var(--text-muted)")
                 }
               >
                 Nous contacter
@@ -207,7 +207,7 @@ export function Navbar() {
           <Link to="/contact" className="btn btn-primary" style={{ padding: "0.6rem 1.25rem", fontSize: "0.9rem" }}>
             <span>Demander un devis</span>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
+              <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </Link>
         </div>

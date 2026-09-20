@@ -13,10 +13,10 @@ export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const emailAddress = "contact@i-bory.com";
-  const whatsappNumber = "+225 7 00 00 00 00";
+  const emailAddress = "iboryci@gmail.com";
+  const whatsappNumber = "+225 05 09 12 63 29";
   const whatsappUrl =
-    "https://wa.me/33700000000?text=Bonjour%20I-BORY,%20je%20vous%20contacte%20concernant%20un%20projet%20informatique.";
+    "https://wa.me/2250509126319?text=Bonjour%20I-BORY,%20je%20vous%20contacte%20concernant%20un%20projet%20informatique.";
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(emailAddress);
@@ -349,8 +349,8 @@ export function Contact() {
                   </label>
                   <div className="flex flex-wrap gap-2 pt-1">
                     {[
-                      "< 2 500 €",
-                      "2 500 € - 5 000 €",
+                      "< 50 000",
+                      "50 000fcfa 200000fcfa",
                       "5 000 € - 15 000 €",
                       "+ 15 000 €",
                       "À définir ensemble",

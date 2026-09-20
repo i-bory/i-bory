@@ -96,7 +96,7 @@ export function Home() {
         </svg>
       ),
     },
-    {
+    /* {
       id: "consulting",
       title: "Conseil & Audit Technologique",
       description:
@@ -110,61 +110,23 @@ export function Home() {
           <line x1="12" y1="8" x2="12.01" y2="8" />
         </svg>
       ),
-    },
+    }, */
   ];
 
   const projects: ProjectItem[] = [
     {
       id: "p1",
-      title: "BoryPay - Passerelle de Paiement & Facturation",
-      client: "Fintech & Commerce B2B",
-      category: "web",
-      categoryLabel: "Web & SaaS",
-      problem:
-        "Processus de facturation morcelé entre plusieurs outils avec des retards de règlement fréquents.",
-      solution:
-        "Conception d'une application unifiée avec génération automatique de factures et rappels multicanaux.",
-      impact: "+140% de rapidité de paiement et zéro facture égarée.",
-      technologies: ["React 19", "TypeScript", "Bun", "PostgreSQL", "Stripe API"],
-    },
-    {
-      id: "p2",
-      title: "HealthFlow - Gestion de Clinique & Télémédecine",
-      client: "Réseau de Santé & Cabinets",
+      title: "Applications Mobile & Serveur en temps reel (En developpement) ",
+      client: "Transport Locale & Logisics / B2B",
       category: "mobile",
-      categoryLabel: "Application Mobile",
+      categoryLabel: "Mobile & Cloud",
       problem:
-        "Salles d'attente saturées et difficultés d'accès aux dossiers médicaux lors des déplacements.",
+        "Coordination manuel et manque de visibiliter",
       solution:
-        "Application mobile multiplateforme pour les praticiens et patients avec rappels SMS et agenda temps réel.",
-      impact: "-65% de temps d'attente et diminution de 80% des rendez-vous manqués.",
-      technologies: ["React Native", "WebRTC", "FastAPI", "Cloud Sécurisé Santé"],
-    },
-    {
-      id: "p3",
-      title: "LogiTrack Pro - Gestion de Flotte & Tournées",
-      client: "Entreprise de Transport & Logistique",
-      category: "automation",
-      categoryLabel: "Automatisation & Métier",
-      problem:
-        "Planification manuelle des tournées sur feuilles Excel et retards imprévus sur les livraisons.",
-      solution:
-        "Outil d'optimisation d'itinéraires avec géolocalisation en direct et répartition intelligente des commandes.",
-      impact: "28% de carburant économisé et 2h30 gagnées par chauffeur et par jour.",
-      technologies: ["Algorithme d'optimisation", "WebSockets", "Leaflet Maps", "Node.js"],
-    },
-    {
-      id: "p4",
-      title: "EduPulse - Plateforme d'Apprentissage Hybride",
-      client: "Institut Supérieur de Formation",
-      category: "web",
-      categoryLabel: "Web & SaaS",
-      problem:
-        "Manque de suivi individuel des apprenants et gestion administrative complexe des évaluations.",
-      solution:
-        "Portail étudiant et formateur avec tableau de bord analytique, quiz interactifs et correction instantanée.",
-      impact: "98% d'engagement apprenants et administration divisée par trois.",
-      technologies: ["React", "Tailwind/Custom CSS", "Docker", "REST API"],
+        "Une application mobile permettant aux different acteur d'interagir les uns avec les autres.",
+      impact:
+        "Beta, en progression avec quelques premièr utilisateurs.",
+      technologies: ["Android", "Cloudflare", "ExpressJS", "TypeScript", "React", "Bun"],
     },
   ];
 
@@ -217,8 +179,8 @@ export function Home() {
 
             {/* Main Slogan / Title */}
             <h1 className="text-hero mb-4">
-              <span className="gradient-text-primary">I-BORY</span>
-              <span style={{ color: "var(--white)" }}> "Vous rendre la vie plus facile"</span>
+              <span className="gradient-text-primary">i-bory, </span>
+              <span style={{ color: "var(--white)" }}> vous rendre la vie plus facile</span>
             </h1>
 
             {/* Description */}
@@ -796,7 +758,7 @@ export function Home() {
                 </Link>
 
                 <a
-                  href="https://wa.me/33700000000?text=Bonjour%20I-BORY,%20je%20souhaite%20un%20devis%20pour%20mon%20projet."
+                  href="https://wa.me/2250509126319?text=Bonjour%20I-BORY,%20je%20souhaite%20un%20devis%20pour%20mon%20projet."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-whatsapp"
