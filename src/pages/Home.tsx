@@ -36,9 +36,9 @@ export function Home() {
       benefit: "Des interfaces rapides et accessibles pour booster votre activité.",
       icon: (
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-          <line x1="8" y1="21" x2="16" y2="21"/>
-          <line x1="12" y1="17" x2="12" y2="21"/>
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+          <line x1="8" y1="21" x2="16" y2="21" />
+          <line x1="12" y1="17" x2="12" y2="21" />
         </svg>
       ),
     },
@@ -51,8 +51,8 @@ export function Home() {
       benefit: "Restez dans la poche de vos clients et collaborateurs.",
       icon: (
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-          <line x1="12" y1="18" x2="12.01" y2="18"/>
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+          <line x1="12" y1="18" x2="12.01" y2="18" />
         </svg>
       ),
     },
@@ -65,8 +65,8 @@ export function Home() {
       benefit: "Économisez des dizaines d'heures chaque semaine.",
       icon: (
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="16 18 22 12 16 6"/>
-          <polyline points="8 6 2 12 8 18"/>
+          <polyline points="16 18 22 12 16 6" />
+          <polyline points="8 6 2 12 8 18" />
         </svg>
       ),
     },
@@ -79,7 +79,7 @@ export function Home() {
       benefit: "Passez de la donnée brute à des décisions éclairées.",
       icon: (
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+          <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
         </svg>
       ),
     },
@@ -92,7 +92,7 @@ export function Home() {
       benefit: "Vos applications fonctionnent 24h/24 en toute sécurité.",
       icon: (
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+          <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
         </svg>
       ),
     },
@@ -105,9 +105,9 @@ export function Home() {
       benefit: "Des choix techniques pérennes, sans jargon inutile.",
       icon: (
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="12" cy="12" r="10"/>
-          <line x1="12" y1="16" x2="12" y2="12"/>
-          <line x1="12" y1="8" x2="12.01" y2="8"/>
+          <circle cx="12" cy="12" r="10" />
+          <line x1="12" y1="16" x2="12" y2="12" />
+          <line x1="12" y1="8" x2="12.01" y2="8" />
         </svg>
       ),
     },
@@ -217,9 +217,8 @@ export function Home() {
 
             {/* Main Slogan / Title */}
             <h1 className="text-hero mb-4">
-              <span className="gradient-text-primary">I-BORY :</span>
-              <br />
-              <span style={{ color: "var(--white)" }}>"Vous rendre la vie plus facile"</span>
+              <span className="gradient-text-primary">I-BORY</span>
+              <span style={{ color: "var(--white)" }}> "Vous rendre la vie plus facile"</span>
             </h1>
 
             {/* Description */}
@@ -233,9 +232,8 @@ export function Home() {
               }}
             >
               <strong style={{ color: "var(--primary)", fontWeight: 600 }}>
-                "Nous créons des solutions informatiques à vos problèmes."
+                Nous créons des solutions informatiques à vos problèmes
               </strong>{" "}
-              De la conception d'applications web et mobiles à l'automatisation intégrale de vos processus métier, nous développons la technologie qui propulse votre entreprise.
             </p>
 
             {/* Call To Actions */}
@@ -805,7 +803,7 @@ export function Home() {
                   style={{ padding: "0.95rem 2rem", fontSize: "1.05rem" }}
                 >
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.679-.702c.971.558 1.77.816 2.78.816 3.18 0 5.767-2.587 5.767-5.766.001-3.182-2.585-5.768-5.766-5.768zm0 10.377c-.901 0-1.637-.253-2.453-.699l-.176-.096-1.585.416.423-1.545-.112-.178c-.516-.821-.789-1.614-.788-2.509 0-2.535 2.062-4.597 4.604-4.597 2.54 0 4.602 2.062 4.602 4.597 0 2.536-2.062 4.611-4.508 4.611zm7.127-14.737C17.069.654 14.654.004 12.035 0 5.435 0 .07 5.365.067 11.966c-.001 2.11.551 4.168 1.599 5.981L0 24l6.216-1.631c1.742.951 3.705 1.453 5.814 1.454h.005c6.598 0 11.964-5.366 11.967-11.967 0-3.199-1.246-6.206-3.513-8.473z"/>
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.679-.702c.971.558 1.77.816 2.78.816 3.18 0 5.767-2.587 5.767-5.766.001-3.182-2.585-5.768-5.766-5.768zm0 10.377c-.901 0-1.637-.253-2.453-.699l-.176-.096-1.585.416.423-1.545-.112-.178c-.516-.821-.789-1.614-.788-2.509 0-2.535 2.062-4.597 4.604-4.597 2.54 0 4.602 2.062 4.602 4.597 0 2.536-2.062 4.611-4.508 4.611zm7.127-14.737C17.069.654 14.654.004 12.035 0 5.435 0 .07 5.365.067 11.966c-.001 2.11.551 4.168 1.599 5.981L0 24l6.216-1.631c1.742.951 3.705 1.453 5.814 1.454h.005c6.598 0 11.964-5.366 11.967-11.967 0-3.199-1.246-6.206-3.513-8.473z" />
                   </svg>
                   <span>WhatsApp direct</span>
                 </a>
