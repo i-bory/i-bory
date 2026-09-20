@@ -1,0 +1,150 @@
+@import "./utils.css";
+
+/* ==========================================================================
+   Global Baseline & Theme Configuration
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color-scheme: dark;
+  background-color: var(--black);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Background mesh & grid texture */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: 
+    radial-gradient(circle at 50% 0%, rgba(105, 134, 245, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 90% 40%, rgba(105, 134, 245, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 10% 80%, rgba(105, 134, 245, 0.04) 0%, transparent 50%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 64px 64px, 64px 64px;
+  pointer-events: none;
+}
+
+/* Modern subtle scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080a0e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e2638;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+::selection {
+  background-color: rgba(105, 134, 245, 0.35);
+  color: #ffffff;
+}
+
+/* Links reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Form Controls */
+.input-control {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  background-color: #0b0e15;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+.input-control:focus {
+  border-color: var(--primary);
+  background-color: #0e121c;
+  box-shadow: 0 0 0 3px rgba(105, 134, 245, 0.2);
+}
+
+.input-control::placeholder {
+  color: var(--text-dim);
+}
+
+textarea.input-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-main);
+  margin-bottom: 0.4rem;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.04);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
