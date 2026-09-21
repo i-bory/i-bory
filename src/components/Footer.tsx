@@ -175,7 +175,7 @@ export function Footer() {
             </h4>
             <div className="flex flex-col gap-3">
               <a
-                href="https://wa.me/2250151324099?text=Bonjour%20I-BORY,%20je%20souhaite%20des%20renseignements%20sur%20vos%20solutions."
+                href="https://wa.me/2250509126319?text=Bonjour%20I-BORY,%20je%20souhaite%20des%20renseignements%20sur%20vos%20solutions."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-whatsapp"

@@ -96,7 +96,7 @@ export function Home() {
         </svg>
       ),
     },
-    {
+    /* {
       id: "consulting",
       title: "Conseil & Audit Technologique",
       description:
@@ -110,7 +110,7 @@ export function Home() {
           <line x1="12" y1="8" x2="12.01" y2="8" />
         </svg>
       ),
-    },
+    }, */
   ];
 
   const projects: ProjectItem[] = [
@@ -123,9 +123,9 @@ export function Home() {
       problem:
         "Coordination manuel et manque de visibiliter",
       solution:
-        "Une application mobile permettant aux clients de retrouver leur carte de fidélité et leur historique, tout en facilitant le suivi des visites par les stations.",
+        "Une application mobile permettant aux different acteur d'interagir les uns avec les autres.",
       impact:
-        "Beta, en progression avec quelques premièr utilisateurs",
+        "Beta, en progression avec quelques premièr utilisateurs.",
       technologies: ["Android", "Cloudflare", "ExpressJS", "TypeScript", "React", "Bun"],
     },
   ];
@@ -757,8 +757,7 @@ export function Home() {
                   </svg>
                 </Link>
 
-                <a
-                  href="https://wa.me/2250151324099?text=Bonjour%20I-BORY,%20je%20souhaite%20un%20devis%20pour%20mon%20projet."
+                <a href="https://wa.me/2250509126319?text=Bonjour%20I-BORY,%20je%20souhaite%20un%20devis%20pour%20mon%20projet."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-whatsapp"
