@@ -349,10 +349,10 @@ export function Contact() {
                   </label>
                   <div className="flex flex-wrap gap-2 pt-1">
                     {[
-                      "< 50 000",
-                      "50 000fcfa 200000fcfa",
-                      "5 000 € - 15 000 €",
-                      "+ 15 000 €",
+                      "< 50 000 FCFA",
+                      "50~200 MILLE FCFA",
+                      "200~700 MILLE FCFA",
+                      "+1 MILLION FCFA",
                       "À définir ensemble",
                     ].map((b) => (
                       <button
