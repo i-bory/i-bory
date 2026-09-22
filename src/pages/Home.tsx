@@ -210,7 +210,7 @@ export function Home() {
               </Link>
 
               <button
-                onClick={() => navigateAndScroll("services")}
+                onClick={() => navigateAndScroll("#services")}
                 className="btn btn-outline"
                 style={{ padding: "0.95rem 2rem", fontSize: "1.05rem" }}
               >
