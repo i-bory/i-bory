@@ -1,3 +1,4 @@
+import { useNavigateAndScroll } from "@/utils/scrollAndNavigate";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -25,7 +26,7 @@ interface ProjectItem {
 
 export function Home() {
   const [activeFilter, setActiveFilter] = useState<string>("all");
-
+  const navigateAndScroll = useNavigateAndScroll();
   const services: ServiceItem[] = [
     {
       id: "web",
@@ -208,8 +209,8 @@ export function Home() {
                 </svg>
               </Link>
 
-              <a
-                href="#services"
+              <button
+                onClick={() => navigateAndScroll("services")}
                 className="btn btn-outline"
                 style={{ padding: "0.95rem 2rem", fontSize: "1.05rem" }}
               >
@@ -218,7 +219,7 @@ export function Home() {
                   <line x1="12" y1="5" x2="12" y2="19"></line>
                   <polyline points="19 12 12 19 5 12"></polyline>
                 </svg>
-              </a>
+              </button>
             </div>
 
             {/* Proof Numbers / Key Metrics */}
@@ -757,8 +758,7 @@ export function Home() {
                   </svg>
                 </Link>
 
-                <a
-                  href="https://wa.me/2250509126319?text=Bonjour%20I-BORY,%20je%20souhaite%20un%20devis%20pour%20mon%20projet."
+                <a href="https://wa.me/2250509126319?text=Bonjour%20I-BORY,%20je%20souhaite%20un%20devis%20pour%20mon%20projet."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-whatsapp"

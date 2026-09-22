@@ -1,17 +1,15 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./index.css";
 
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
-import { ScrollToTop } from "./components/ScrollToTop";
 import { Home } from "./pages/Home";
 import { Contact } from "./pages/Contact";
 
 export function App() {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
+    <HashRouter >
       <div
         style={{
           display: "flex",
@@ -31,7 +29,7 @@ export function App() {
         </main>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
